@@ -7,7 +7,8 @@ def main():
     folder = os.listdir('./')
     folder = [x for x in folder if x.endswith('.json')]
     jsonPath = folder[0]
-    with open(jsonPath) as f:
+    #for filepath in folder:
+    with open(jsonPathpy) as f:
         print(json.load(f)['text'])
 
 def trans(text):
